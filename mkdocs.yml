@@ -1,0 +1,109 @@
+site_name: DEVOPS Site
+site_description: DEVOPS BLOG
+site_author: deng you
+site_url: https://devclubs.github.io/blog
+
+repo_url: https://github.com/devclubs/blog
+repo_name: devclubs/blog
+
+theme:
+  name: material
+  favicon: assets/favicon.webp
+  icon:
+    logo: octicons/code-review-16
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: 进入夜间模式
+    - scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: 进入日间模式
+  language: 'zh'
+  features:
+    - navigation.footer
+    - navigation.tabs
+    - navigation.top
+    - navigation.tracking
+    - content.code.copy
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/devclubs
+      name: devclubs on GitHub
+    - icon: fontawesome/brands/steam
+#      link: https://steamcommunity.com/id/akibaarisa
+#      name: AkibaArisa on Steam
+
+extra_css:
+  - stylesheets/custom.css
+
+#extra_javascript:
+#  - javascripts/mathjax.js
+#  - https://polyfill.io/v3/polyfill.min.js?features=es6
+#  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+#  - javascripts/waifu/autoload.js  # 十分耗时，放在最后加载
+
+plugins:
+  - search
+  - blogging:
+      locale: zh_CN
+      dirs:
+        - blog
+      features:
+        tags: {}
+      theme:
+        name: card
+        time_format: '%Y-%m-%d %H:%M:%S'
+        meta_time_format: '%Y-%m-%d %H:%M:%S'
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: iso_datetime
+  - glightbox:
+      draggable: false
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - toc:
+      permalink: true
+
+# Page tree
+nav:
+  - 主页: index.md
+  - Golang:
+    - golang/index.md
+    - 标准库: golang/standlib.md
+    - GORM 教程: golang/gorm.md
+  - Python:
+    - python/index.md
+
+copyright: 'Copyright &copy; 2077 Akiba Arisa <a href="https://devclubs.github.io/blog" target="_blank">萌ICP备20232033号</a>'
