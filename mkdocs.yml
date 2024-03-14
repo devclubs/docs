@@ -101,7 +101,7 @@ nav:
   - 主页: index.md
   - Golang:
     - golang/index.md
-    - 标准库: golang/standlib.md
+    - Go 标准库: golang/standlib.md
     - GORM 教程: golang/gorm.md
   - Python:
     - python/index.md
