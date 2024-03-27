@@ -107,6 +107,7 @@ nav:
     - python/index.md
   - DJANGO:
     - django/index.md
+    - django/route.md
     - django/design.md
-
+    
 copyright: 'Copyright &copy; 2077 Akiba Arisa <a href="https://devclubs.github.io/blog" target="_blank">萌ICP备20232033号</a>'
