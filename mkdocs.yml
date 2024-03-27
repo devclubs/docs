@@ -1,10 +1,10 @@
 site_name: DEVOPS Site
 site_description: DEVOPS BLOG
 site_author: deng you
-site_url: https://devclubs.github.io/blog
+site_url: https://devclubs.github.io/docs
 
-repo_url: https://github.com/devclubs/blog
-repo_name: devclubs/blog
+repo_url: https://github.com/devclubs/docs
+repo_name: devclubs/docs
 
 theme:
   name: material
@@ -99,11 +99,14 @@ markdown_extensions:
 # Page tree
 nav:
   - 主页: index.md
-  - Golang:
+  - GOLANG:
     - golang/index.md
     - Go 标准库: golang/standlib.md
     - GORM 教程: golang/gorm.md
-  - Python:
+  - PYTHON:
     - python/index.md
+  - DJANGO:
+    - django/index.md
+    - django/design.md
 
 copyright: 'Copyright &copy; 2077 Akiba Arisa <a href="https://devclubs.github.io/blog" target="_blank">萌ICP备20232033号</a>'
